@@ -1,0 +1,16 @@
+name: "default input test"
+
+on:
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: 'commit SHA'
+        required: false
+        default: ${{ github.sha }}
+        
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echoing
+        run: echo " lala ${{ github.event.inputs.sha }}"
