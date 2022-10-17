@@ -7,7 +7,7 @@ on:
         description: 'commit SHA'
         required: false
 
-environment:
+env:
   sha: ${{ github.event.inputs.sha || github.sha }}
         
 jobs:
