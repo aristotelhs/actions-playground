@@ -6,7 +6,7 @@ on:
       sha:
         description: 'commit SHA'
         required: false
-        default: ${{ github.sha }}
+        default: "42"
         
 jobs:
   testing:
