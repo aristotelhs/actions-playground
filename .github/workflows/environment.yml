@@ -16,3 +16,8 @@ jobs:
     steps:
       - name: Echoing
         run: echo " lala ${{ env.sha }}"
+  testing2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echoing testing 2
+        run: echo " koko ${{ env.sha }}"        
